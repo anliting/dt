@@ -1,16 +1,16 @@
-import Container from       './dt/Container.js'
-import DecalarativeSet from './dt/DecalarativeSet.js'
-import DirectedGraph from   './dt/DirectedGraph.js'
-import List from            './dt/List.js'
-import NumberPair from      './dt/NumberPair.js'
-import PriorityQueue from   './dt/PriorityQueue.js'
-import Queue from           './dt/Queue.js'
-import Range from           './dt/Range.js'
-import Stack from           './dt/Stack.js'
-import Vector2 from         './dt/Vector2.js'
+import Container from       './dt/Container.mjs'
+import DeclarativeSet from  './dt/DeclarativeSet.mjs'
+import DirectedGraph from   './dt/DirectedGraph.mjs'
+import List from            './dt/List.mjs'
+import NumberPair from      './dt/NumberPair.mjs'
+import PriorityQueue from   './dt/PriorityQueue.mjs'
+import Queue from           './dt/Queue.mjs'
+import Range from           './dt/Range.mjs'
+import Stack from           './dt/Stack.mjs'
+import Vector2 from         './dt/Vector2.mjs'
 export{
     Container,
-    DecalarativeSet,
+    DeclarativeSet,
     DirectedGraph,
     List,
     NumberPair,
@@ -22,7 +22,7 @@ export{
 }
 export default{
     Container,
-    DecalarativeSet,
+    DeclarativeSet,
     DirectedGraph,
     List,
     NumberPair,

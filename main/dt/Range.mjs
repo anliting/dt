@@ -1,4 +1,4 @@
-import NumberPair from './NumberPair.js'
+import NumberPair from './NumberPair.mjs'
 function Range(){
     NumberPair.apply(this,arguments)
 }

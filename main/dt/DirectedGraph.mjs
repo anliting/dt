@@ -1,6 +1,6 @@
-import VertexEdgeArray from './DirectedGraph/VertexEdgeArray.js'
-import Stack from './Stack.js'
-import Container from './Container.js'
+import VertexEdgeArray from './DirectedGraph/VertexEdgeArray.mjs'
+import Stack from './Stack.mjs'
+import Container from './Container.mjs'
 function DirectedGraph(DataStructure=VertexEdgeArray){
     this._DataStructure=VertexEdgeArray
     this._data=new this._DataStructure

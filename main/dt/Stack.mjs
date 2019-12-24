@@ -1,4 +1,4 @@
-import CompoundArrayContainer from './CompoundArrayContainer.js'
+import CompoundArrayContainer from './CompoundArrayContainer.mjs'
 function Stack(){
     CompoundArrayContainer.call(this)
 }

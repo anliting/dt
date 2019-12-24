@@ -1,4 +1,4 @@
-import Container from './Container.js'
+import Container from './Container.mjs'
 function CompoundArrayContainer(){
     Container.call(this)
     this._a=[]

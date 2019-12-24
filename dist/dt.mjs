@@ -13,26 +13,32 @@ Container.prototype[Symbol.iterator]=function*(){
 };
 Container.iterator=c=>Container.prototype[Symbol.iterator].call(c);
 
-function DecalarativeSet(){
+function DeclarativeSet(){
     this._set=new Set;
 }
-DecalarativeSet.prototype.in=function(doc){
+DeclarativeSet.prototype.in=function(doc){
     this._set.add(doc);
     if(this._forEach)
         this._forEach.in(doc);
 };
-DecalarativeSet.prototype.out=function(doc){
+DeclarativeSet.prototype.out=function(doc){
     this._set.delete(doc);
     if(this._forEach)
         this._forEach.out(doc);
 };
-Object.defineProperty(DecalarativeSet.prototype,'forEach',{set(doc){
+Object.defineProperty(DeclarativeSet.prototype,'forEach',{set(doc){
     if(this._forEach)
         this._set.forEach(this._forEach.out);
     this._forEach=doc;
     if(this._forEach)
         this._set.forEach(this._forEach.in);
 }});
+DeclarativeSet.fromArray=function(a){
+    let s=new DeclarativeSet;
+    for(let e of a)
+        s.in(a);
+    return a
+};
 
 function VertexEdgeArray(){
     this._vertices=[];
@@ -366,7 +372,7 @@ Vector2.prototype.valueOf=function(){
 
 var dt = {
     Container,
-    DecalarativeSet,
+    DeclarativeSet,
     DirectedGraph,
     List,
     NumberPair,
@@ -378,4 +384,4 @@ var dt = {
 };
 
 export default dt;
-export { Container, DecalarativeSet, DirectedGraph, List, NumberPair, PriorityQueue, Queue, Range, Stack, Vector2 };
+export { Container, DeclarativeSet, DirectedGraph, List, NumberPair, PriorityQueue, Queue, Range, Stack, Vector2 };

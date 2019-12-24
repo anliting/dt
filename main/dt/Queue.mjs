@@ -1,4 +1,4 @@
-import CompoundArrayContainer from './CompoundArrayContainer.js'
+import CompoundArrayContainer from './CompoundArrayContainer.mjs'
 function Queue(){
     CompoundArrayContainer.call(this)
 }

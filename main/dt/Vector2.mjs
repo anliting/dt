@@ -1,4 +1,4 @@
-import NumberPair from './NumberPair.js'
+import NumberPair from './NumberPair.mjs'
 function Vector2(){
     NumberPair.apply(this,arguments)
 }

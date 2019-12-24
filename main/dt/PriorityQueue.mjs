@@ -1,4 +1,4 @@
-import CompoundArrayContainer from './CompoundArrayContainer.js'
+import CompoundArrayContainer from './CompoundArrayContainer.mjs'
 function PriorityQueue(cmp){
     CompoundArrayContainer.call(this)
     this._cmp=cmp||((a,b)=>a-b)
