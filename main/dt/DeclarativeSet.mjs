@@ -22,6 +22,6 @@ DeclarativeSet.fromArray=function(a){
     let s=new DeclarativeSet
     for(let e of a)
         s.in(a)
-    return a
+    return s
 }
 export default DeclarativeSet
