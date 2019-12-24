@@ -36,7 +36,7 @@ Object.defineProperty(DeclarativeSet.prototype,'forEach',{set(doc){
 DeclarativeSet.fromArray=function(a){
     let s=new DeclarativeSet;
     for(let e of a)
-        s.in(a);
+        s.in(e);
     return s
 };
 
