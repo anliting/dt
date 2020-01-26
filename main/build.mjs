@@ -14,7 +14,7 @@ async function link(input,file){
     fsp.copyFile('main/dt.mjs','dist/node/dt.mjs')
     fsp.writeFile('dist/node/package.json',JSON.stringify({
         name:'@anliting/dt',
-        version:'2.0.3',
+        version:'2.1.3',
         main:'dt.mjs',
     }))
     let[license,code]=await Promise.all([
