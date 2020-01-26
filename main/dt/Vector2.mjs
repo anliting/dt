@@ -2,7 +2,6 @@ import NumberPair from './NumberPair.mjs'
 function Vector2(){
     NumberPair.apply(this,arguments)
 }
-Object.setPrototypeOf(Vector2,NumberPair)
 Object.setPrototypeOf(Vector2.prototype,NumberPair.prototype)
 // inner product
 Vector2.prototype.ip=function(v){

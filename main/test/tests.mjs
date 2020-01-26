@@ -22,37 +22,6 @@ export default[
                 expected.every((v,i)=>v==result[i])
         },
     },{
-        description:'EventEmmiter on+off+emit',
-        test(){
-            let
-                e=new dt.EventEmmiter,
-                v=0,
-                l=()=>v++
-            e.on('a',l)
-            e.emit('a')
-            if(!(v==1))
-                return
-            e.off('a',l)
-            e.emit('a')
-            if(!(v==1))
-                return
-            return 1
-        },
-    },{
-        description:'EventEmmiter once+emit',
-        test(){
-            let
-                e=new dt.EventEmmiter,
-                v=0,
-                l=()=>v++
-            e.once('a',l)
-            e.emit('a')
-            e.emit('a')
-            if(!(v==1))
-                return
-            return 1
-        },
-    },{
         description:'PriorityQueue',
         test(){
             let expected=[1,2,3,4,5,6,7,8,9]
@@ -120,7 +89,7 @@ export default[
             return +v==5
         },
     },{
-        description:'array.difference',
+        description:'(FORKED) array.difference',
         test(){
             let
                 a=[3,2,4,8],
@@ -128,12 +97,43 @@ export default[
             return a.length==b.length&&a.every((v,i)=>v==b[i])
         },
     },{
-        description:'array.prefixSum',
+        description:'(FORKED) array.prefixSum',
         test(){
             let
                 a=[3,5,9,17],
                 b=dt.array.prefixSum([3,2,4,8])
             return a.length==b.length&&a.every((v,i)=>v==b[i])
+        },
+    },{
+        description:'(FORKED) EventEmmiter on+off+emit',
+        test(){
+            let
+                e=new dt.EventEmmiter,
+                v=0,
+                l=()=>v++
+            e.on('a',l)
+            e.emit('a')
+            if(!(v==1))
+                return
+            e.off('a',l)
+            e.emit('a')
+            if(!(v==1))
+                return
+            return 1
+        },
+    },{
+        description:'(FORKED) EventEmmiter once+emit',
+        test(){
+            let
+                e=new dt.EventEmmiter,
+                v=0,
+                l=()=>v++
+            e.once('a',l)
+            e.emit('a')
+            e.emit('a')
+            if(!(v==1))
+                return
+            return 1
         },
     },
 ]

@@ -12,7 +12,6 @@ Pair.prototype[Symbol.iterator]=function*(){
 function NumberPair(){
     Pair.apply(this,arguments)
 }
-Object.setPrototypeOf(NumberPair,Pair)
 Object.setPrototypeOf(NumberPair.prototype,Pair.prototype)
 // a+b
 NumberPair.prototype.add=function(v){
