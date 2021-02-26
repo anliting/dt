@@ -1,4 +1,4 @@
-import dt from '../dt.mjs'
+import dt from '../../dist/dt.mjs'
 export default[
     {
         description:'Container.iterator',
