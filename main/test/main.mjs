@@ -1,5 +1,5 @@
 import tests from './tests.mjs'
-import doe from '../../lib/doe/main/doe.mjs'
+import doe from '../../lib/doe/dist/doe.mjs'
 doe.head(
     doe.style(`
         table{

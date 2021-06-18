@@ -109,4 +109,10 @@ NumberPair.prototype.newDiv=function(v){
 NumberPair.prototype.newDivN=function(x,y=x){
     return new this.constructor(this.x/x,this.y/y)
 }
+NumberPair.numeric=function(a,f){
+    return new this(
+        f(...a.map(a=>a.x)),
+        f(...a.map(a=>a.y))
+    )
+}
 export default NumberPair

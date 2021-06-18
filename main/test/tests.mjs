@@ -89,6 +89,11 @@ export default[
             return +v==5
         },
     },{
+        description:'Vector2.prototype.area',
+        test(){
+            return new dt.Vector2(2,5).area(new dt.Vector2(3,4))==7
+        },
+    },{
         description:'(FORKED) array.difference',
         test(){
             let

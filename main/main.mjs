@@ -7,6 +7,7 @@ import PriorityQueue from   './main/PriorityQueue.mjs'
 import Queue from           './main/Queue.mjs'
 import Range from           './main/Range.mjs'
 import Stack from           './main/Stack.mjs'
+import Stream from          './main/Stream.mjs'
 import Vector2 from         './main/Vector2.mjs'
 export{
     Container,
@@ -18,6 +19,7 @@ export{
     Queue,
     Range,
     Stack,
+    Stream,
     Vector2,
 }
 export default{
@@ -30,5 +32,6 @@ export default{
     Queue,
     Range,
     Stack,
+    Stream,
     Vector2,
 }
